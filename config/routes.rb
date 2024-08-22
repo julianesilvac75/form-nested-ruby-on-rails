@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "customers", to: "customers#index"
+  get "customers/new", to: "customers#new"
 end
