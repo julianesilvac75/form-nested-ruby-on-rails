@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "customers#index"
 
   get "customers", to: "customers#index"
   get "customers/new", to: "customers#new"
+  post "customers", to: "customers#create"
 end
