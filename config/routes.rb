@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "customers#index"
 
-  get "customers", to: "customers#index"
-  get "customers/new", to: "customers#new"
-  post "customers", to: "customers#create"
+  resources :customers
+
+  # get "customers", to: "customers#index"
+  # get "customers/new", to: "customers#new"
+  # post "customers", to: "customers#create"
 end
