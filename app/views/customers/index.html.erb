@@ -7,12 +7,16 @@
       <tr>
         <th>Nome</th>
         <th>Telefone</th>
+        <th>Endereço</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><%= customer.name %></td>
         <td><%= customer.phone %></td>
+        <td><%= customer.address&.street %></td>
+        <td><%= customer.address&.number %></td>
+        <td><%= customer.address&.city %></td>
       </tr>
     </tbody>
   </table>
